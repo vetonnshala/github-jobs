@@ -28,7 +28,7 @@ function handleParamChange(e) {
 
       <JobsPagination page={page} setPage={setPage} hasNextPage ={hasNextPage} /> 
        { loading && <h3 className="text-light">Loading...</h3>}
-       { error && <h3  className="text-light" >Error. Try Refreshing</h3>}
+       { error && <h3  className="text-light" >Error. Try refreshing or request access on console</h3>}
       {jobs.map(job =>{
         return <Job key={job.id} job={job} />
       })}
